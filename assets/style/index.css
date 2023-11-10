@@ -1,0 +1,66 @@
+@charset "utf-8";
+ 
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Nunito sans', 'Open sans', Arial, sans-serif;
+  letter-spacing: 0.3px;
+}
+ 
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+.flexbox {
+    display: flex;
+    gap: 20px;
+}
+
+header {
+    background-color: transparent;
+    background: url(../images/hero_banner_light.jpeg) center center / cover no-repeat fixed ;
+
+    height: 60px;
+    overflow: hidden;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+} 
+
+nav ul {
+    font-size: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 60px;
+    text-align: right;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 20px;
+    gap: 30px;
+    color: #ffa7b6;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+.hero-banner {
+    background: url(../images/hero_banner_light.jpeg) center center / cover no-repeat fixed ;
+    background-size: cover;
+    height: 100dvh;
+}
+

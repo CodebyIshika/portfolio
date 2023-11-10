@@ -27,7 +27,7 @@ body {
 header {
     background-color: transparent;
     background: url(../images/hero_banner_light.jpeg) center center / cover no-repeat fixed ;
-
+    opacity: 0.8;
     height: 60px;
     overflow: hidden;
 }
@@ -62,5 +62,52 @@ nav ul li a {
     background: url(../images/hero_banner_light.jpeg) center center / cover no-repeat fixed ;
     background-size: cover;
     height: 100dvh;
+    opacity: 0.8;
 }
+
+.text-blue-500 {
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246/var(--tw-text-opacity));
+}
+
+/*----------------------------------*/
+/*   MAIN                          */
+/*----------------------------------*/
+
+main {
+    background-color: #111827;
+    color:#9ca3af ;
+    padding: 70px;
+}
+
+.main h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+}
+
+.about {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.about img {
+    width: 500px;
+    height: 650px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.paragraphs {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
 

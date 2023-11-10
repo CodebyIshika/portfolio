@@ -32,8 +32,15 @@ header {
     overflow: hidden;
 }
 
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
 nav {
-    width: 60%;
+    width: 35%;
     text-align: right;
 } 
 
@@ -52,10 +59,15 @@ nav ul li a {
     display: inline-block;
     padding: 0 15px;
     font-size: 20px;
-    gap: 30px;
-    color: #ffa7b6;
+    gap: 10px;
+    color: #000;
     text-decoration: none;
     transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #1d4ed8;
+    color: #fff;
 }
 
 .hero-banner {
@@ -65,9 +77,37 @@ nav ul li a {
     opacity: 0.8;
 }
 
-.text-blue-500 {
-    --tw-text-opacity: 1;
-    color: rgb(59 130 246/var(--tw-text-opacity));
+.banner {
+    padding-top: 200px;
+}
+
+.banner h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.banner .text {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.banner .lang {
+    color: #3b82f6;
+    font-size: 20px;
+}
+
+.lang {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  /* Add a class to trigger the fade-in effect */
+  .fade-in {
+    opacity: 1;
+}
+.name {
+    color: #3b82f6;
+    font-weight: 900;
 }
 
 /*----------------------------------*/
@@ -177,3 +217,51 @@ footer{
     place-items: center;
     line-height: 100px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* Add styles for smaller screens */
+    .container {
+      width: 90%;
+    }
+  
+    header {
+      height: auto;
+    }
+  
+    .hero-banner {
+      height: 80vh;
+    }
+  
+    .banner {
+      padding-top: 100px;
+    }
+  
+    .banner h1 {
+      font-size: 30px;
+    }
+  
+    .banner p {
+      font-size: 16px;
+    }
+  
+    .about {
+      flex-direction: column;
+    }
+  
+    .about img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .paragraphs {
+      font-size: 16px;
+    }
+  
+    .contact-info {
+      padding: 30px;
+    }
+  
+    .connection {
+      width: 100%;
+    }
+  }

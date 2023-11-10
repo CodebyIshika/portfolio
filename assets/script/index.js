@@ -1,15 +1,16 @@
 'use strict';
 
 // Utility functions
-function onEvent(event, selector, callback) {
-    return selector.addEventListener(event, callback);
-}
+// function onEvent(event, selector, callback) {
+//     return selector.addEventListener(event, callback);
+// }
     
-function select(selector, parent = document) {
-    return parent.querySelector(selector);
-}
+// function select(selector, parent = document) {
+//     return parent.querySelector(selector);
+// }
 
-// selection
-const opSystem = select('.op-system');
-const language = select('.language');
-const browser = select('.browser');
+
+document.addEventListener('DOMContentLoaded', function() {
+    var langElement = document.querySelector('.lang');
+    langElement.classList.add('fade-in');
+  });

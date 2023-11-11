@@ -13,7 +13,7 @@ Feel free to reach out to me for collaboration, networking, or just a friendly c
  - GitHub: [CodebyIshika](https://github.com/CodebyIshika)
 
 ### My Portfolio
-[Click here]( ) to explore my portfolio and feel free to share your valuable suggestions. 
+[Click here]( https://codebyishika.github.io/portfolio/) to explore my portfolio and feel free to share your valuable suggestions. 
 Your feedback is greatly appreciated as it helps me enhance and refine my work. 
 Looking forward to hearing from you!
 

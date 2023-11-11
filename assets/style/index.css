@@ -94,6 +94,7 @@ nav ul li a:hover {
 .banner .lang {
     color: #3b82f6;
     font-size: 20px;
+    margin-top: 5px;
 }
 
 .lang {
@@ -202,7 +203,11 @@ main h1 {
     padding: 5px;
     text-align: center;
     margin-top: 5px;
+}
 
+.connection:hover {
+    transform: scale(1.1);
+    border-color: #1d4ed8;
 }
 
 /*----------------------------------*/
@@ -218,8 +223,7 @@ footer{
     line-height: 100px;
 }
 
-@media only screen and (max-width: 768px) {
-    /* Add styles for smaller screens */
+@media screen and (max-width: 768px) {
     .container {
       width: 90%;
     }
@@ -227,7 +231,7 @@ footer{
     header {
       height: auto;
     }
-  
+
     .hero-banner {
       height: 80vh;
     }
@@ -238,30 +242,76 @@ footer{
   
     .banner h1 {
       font-size: 30px;
+      .name {
+        color: #000;
+      }
     }
-  
+    
     .banner p {
       font-size: 16px;
+    }
+
+    .hero-banner .lang {
+        color: #000;
+    }
+
+    .info{
+        padding: 0;
+    }
+
+    .main {
+        width: 100%;
     }
   
     .about {
       flex-direction: column;
+      width: 100%;
+      overflow: hidden;
+      padding-bottom: 50px;
+      margin: 0;
     }
-  
+
+    .hd-about {
+        padding: 50px 0 40px 0;
+    }
+
     .about img {
       width: 100%;
       height: auto;
+      padding: 0;
     }
   
     .paragraphs {
       font-size: 16px;
+      padding: 20px;
+      padding-top: 0;
     }
-  
+    
     .contact-info {
-      padding: 30px;
+        padding: 25px;
+        margin: 10px, 0;
+    }
+
+    .hd-contact{
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .media {
+      flex-direction: column;
+      gap: 2px;
+      width: 100%;
     }
   
     .connection {
       width: 100%;
+      margin: 0;
     }
   }
+
+@media screen and (max-width: 768px) {
+     header nav {
+         width: 90%; 
+     } 
+}
